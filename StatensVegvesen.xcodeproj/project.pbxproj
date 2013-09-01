@@ -23,6 +23,9 @@
 		C722D61816CA9A17000E96D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F316CA9A17000E96D4 /* Foundation.framework */; };
 		C722D62016CA9A17000E96D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C722D61E16CA9A17000E96D4 /* InfoPlist.strings */; };
 		C722D62316CA9A17000E96D4 /* StatensVegvesenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D62216CA9A17000E96D4 /* StatensVegvesenTests.m */; };
+		C722D62E16CA9AFF000E96D4 /* CPCameraService.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D62D16CA9AFF000E96D4 /* CPCameraService.m */; };
+		C75D7F0F17D32B3800BB3E22 /* CPCameraViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D7F0E17D32B3800BB3E22 /* CPCameraViewCell.m */; };
+		C75D7F1217D36D3900BB3E22 /* CPCollectionViewCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D7F1117D36D3900BB3E22 /* CPCollectionViewCustomLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		C722D61F16CA9A17000E96D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C722D62116CA9A17000E96D4 /* StatensVegvesenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatensVegvesenTests.h; sourceTree = "<group>"; };
 		C722D62216CA9A17000E96D4 /* StatensVegvesenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatensVegvesenTests.m; sourceTree = "<group>"; };
+		C722D62C16CA9AFF000E96D4 /* CPCameraService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCameraService.h; sourceTree = "<group>"; };
+		C722D62D16CA9AFF000E96D4 /* CPCameraService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCameraService.m; sourceTree = "<group>"; };
+		C75D7F0D17D32B3800BB3E22 /* CPCameraViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCameraViewCell.h; sourceTree = "<group>"; };
+		C75D7F0E17D32B3800BB3E22 /* CPCameraViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCameraViewCell.m; sourceTree = "<group>"; };
+		C75D7F1017D36D3900BB3E22 /* CPCollectionViewCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCollectionViewCustomLayout.h; sourceTree = "<group>"; };
+		C75D7F1117D36D3900BB3E22 /* CPCollectionViewCustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCollectionViewCustomLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,12 @@
 				C722D60916CA9A17000E96D4 /* MainStoryboard.storyboard */,
 				C722D60C16CA9A17000E96D4 /* CPViewController.h */,
 				C722D60D16CA9A17000E96D4 /* CPViewController.m */,
+				C75D7F1017D36D3900BB3E22 /* CPCollectionViewCustomLayout.h */,
+				C75D7F1117D36D3900BB3E22 /* CPCollectionViewCustomLayout.m */,
+				C75D7F0D17D32B3800BB3E22 /* CPCameraViewCell.h */,
+				C75D7F0E17D32B3800BB3E22 /* CPCameraViewCell.m */,
+				C722D62C16CA9AFF000E96D4 /* CPCameraService.h */,
+				C722D62D16CA9AFF000E96D4 /* CPCameraService.m */,
 				C722D5F816CA9A17000E96D4 /* Supporting Files */,
 			);
 			path = StatensVegvesen;
@@ -274,6 +289,9 @@
 				C722D5FE16CA9A17000E96D4 /* main.m in Sources */,
 				C722D60216CA9A17000E96D4 /* CPAppDelegate.m in Sources */,
 				C722D60E16CA9A17000E96D4 /* CPViewController.m in Sources */,
+				C722D62E16CA9AFF000E96D4 /* CPCameraService.m in Sources */,
+				C75D7F0F17D32B3800BB3E22 /* CPCameraViewCell.m in Sources */,
+				C75D7F1217D36D3900BB3E22 /* CPCollectionViewCustomLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +365,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -371,7 +389,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -382,9 +400,12 @@
 		C722D62716CA9A17000E96D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StatensVegvesen/StatensVegvesen-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "StatensVegvesen/StatensVegvesen-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,9 +414,12 @@
 		C722D62816CA9A17000E96D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StatensVegvesen/StatensVegvesen-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "StatensVegvesen/StatensVegvesen-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +478,7 @@
 				C722D62816CA9A17000E96D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C722D62916CA9A17000E96D4 /* Build configuration list for PBXNativeTarget "StatensVegvesenTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +487,7 @@
 				C722D62B16CA9A17000E96D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

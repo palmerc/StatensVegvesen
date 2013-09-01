@@ -1,0 +1,23 @@
+# xcode noise
+build/*
+dist/*
+*.pbxuser
+*.mode1v3
+*.moved-aside
+xcuserdata
+*.xcworkspace
+
+# osx noise
+.DS_Store
+profile
+
+# xcode4 cruft
+*.xcodeproj/project.xcworkspace/*
+*.xcodeproj/xcuserdata/*
+
+# appcode stuffs
+.idea
+
+# CocoaPods
+Pods/*
+Podfile.lock

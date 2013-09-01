@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CPViewController : UIViewController
+@class CPCollectionViewCustomLayout;
+
+
+
+@interface CPViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (strong, nonatomic) NSDictionary *indexPathMetadata;
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet CPCollectionViewCustomLayout *customLayout;
 
 @end
