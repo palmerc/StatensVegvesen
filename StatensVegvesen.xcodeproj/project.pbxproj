@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BCC34B5228841F89A06DCBF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8E3FCC13BE425F9478ED2D /* libPods.a */; };
 		C722D5F216CA9A17000E96D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F116CA9A17000E96D4 /* UIKit.framework */; };
 		C722D5F416CA9A17000E96D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F316CA9A17000E96D4 /* Foundation.framework */; };
 		C722D5F616CA9A17000E96D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F516CA9A17000E96D4 /* CoreGraphics.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		389F2CDBE0D74194BF3A94B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C722D5EE16CA9A17000E96D4 /* StatensVegvesen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatensVegvesen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C722D5F116CA9A17000E96D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C722D5F316CA9A17000E96D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +69,7 @@
 		C75D7F0E17D32B3800BB3E22 /* CPCameraViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCameraViewCell.m; sourceTree = "<group>"; };
 		C75D7F1017D36D3900BB3E22 /* CPCollectionViewCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCollectionViewCustomLayout.h; sourceTree = "<group>"; };
 		C75D7F1117D36D3900BB3E22 /* CPCollectionViewCustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCollectionViewCustomLayout.m; sourceTree = "<group>"; };
+		CE8E3FCC13BE425F9478ED2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 				C722D5F216CA9A17000E96D4 /* UIKit.framework in Frameworks */,
 				C722D5F416CA9A17000E96D4 /* Foundation.framework in Frameworks */,
 				C722D5F616CA9A17000E96D4 /* CoreGraphics.framework in Frameworks */,
+				3BCC34B5228841F89A06DCBF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 				C722D61B16CA9A17000E96D4 /* StatensVegvesenTests */,
 				C722D5F016CA9A17000E96D4 /* Frameworks */,
 				C722D5EF16CA9A17000E96D4 /* Products */,
+				389F2CDBE0D74194BF3A94B3 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +124,7 @@
 				C722D5F316CA9A17000E96D4 /* Foundation.framework */,
 				C722D5F516CA9A17000E96D4 /* CoreGraphics.framework */,
 				C722D61516CA9A17000E96D4 /* SenTestingKit.framework */,
+				CE8E3FCC13BE425F9478ED2D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C722D62616CA9A17000E96D4 /* Build configuration list for PBXNativeTarget "StatensVegvesen" */;
 			buildPhases = (
+				3C410A22BC0D4E11B22911F7 /* Check Pods Manifest.lock */,
 				C722D5EA16CA9A17000E96D4 /* Sources */,
 				C722D5EB16CA9A17000E96D4 /* Frameworks */,
 				C722D5EC16CA9A17000E96D4 /* Resources */,
+				9F96D905E4144031B8E743A4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +274,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C410A22BC0D4E11B22911F7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F96D905E4144031B8E743A4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C722D61216CA9A17000E96D4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,8 +390,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -365,7 +401,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -383,43 +418,43 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		C722D62716CA9A17000E96D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389F2CDBE0D74194BF3A94B3 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StatensVegvesen/StatensVegvesen-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "StatensVegvesen/StatensVegvesen-Info.plist";
-				OTHER_LDFLAGS = "-lxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		C722D62816CA9A17000E96D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389F2CDBE0D74194BF3A94B3 /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StatensVegvesen/StatensVegvesen-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "StatensVegvesen/StatensVegvesen-Info.plist";
-				OTHER_LDFLAGS = "-lxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
