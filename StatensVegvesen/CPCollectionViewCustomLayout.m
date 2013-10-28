@@ -9,8 +9,6 @@
 #import "CPCollectionViewCustomLayout.h"
 #import "CPViewController.h"
 
-
-
 @interface CPCollectionViewCustomLayout ()
 @property (assign, nonatomic) CGSize contentSize;
 @property (strong, nonatomic) NSDictionary *indexPathToLayoutAttributes;
@@ -30,8 +28,9 @@
     
     NSUInteger sectionCount = 0;
     NSUInteger rowCount = 0;
-    CGSize cellSize = CGSizeMake(50.0f, 50.0f);
     
+    CGSize cellSize = self.viewController.cellSize;
+        
     for (NSInteger section = sectionCount; section < [indexPathMetadata count]; section++) {
         CGFloat x = sectionCount * (cellSize.width + 10.0f);
         NSArray *rows = [indexPathMetadata objectForKey:@(section)];
@@ -66,12 +65,13 @@
 {
     NSLog(@"%s", __PRETTY_FUNCTION__);
 
+    CGSize cellSize = self.viewController.cellSize;
+    
     CGFloat x = rect.origin.x;
     CGFloat y = rect.origin.y;
     CGFloat width = rect.size.width;
     CGFloat height = rect.size.height;
     
-    CGSize cellSize = CGSizeMake(60.0f, 60.0f);
     NSInteger lowerSection = floorf(x / cellSize.width);
     if (lowerSection < 0) {
         lowerSection = 0;

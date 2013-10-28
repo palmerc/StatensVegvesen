@@ -13,6 +13,9 @@
 #import "CPCameraService.h"
 
 static NSString *const kCollectionViewReusableCellIdentifier = @"CollectionViewReusableCellIdentifier";
+static int kWidth = 50;
+static int kHeight = 50;
+
 
 @interface CPViewController ()
 
@@ -28,12 +31,13 @@ static NSString *const kCollectionViewReusableCellIdentifier = @"CollectionViewR
     
     NSLog(@"%s", __PRETTY_FUNCTION__);
     
+    self.cellSize = CGSizeMake(100.0f, 100.0f);
     self.customLayout.viewController = self;
     
     NSMutableDictionary *indexPathMetadata = [[NSMutableDictionary alloc] init];
     
-    for (int section = 0; section < 100; section++) {
-        for (int row = 0; row < 100; row++) {
+    for (int section = 0; section < kWidth; section++) {
+        for (int row = 0; row < kHeight; row++) {
             NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:section];
             NSArray *rows = [indexPathMetadata objectForKey:@(section)];
             if (rows == nil) {

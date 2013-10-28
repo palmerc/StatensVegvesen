@@ -19,4 +19,6 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet CPCollectionViewCustomLayout *customLayout;
 
+@property (assign, nonatomic) CGSize cellSize;
+
 @end
