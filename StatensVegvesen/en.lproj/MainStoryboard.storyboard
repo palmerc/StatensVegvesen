@@ -1,105 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A558" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="EIe-ai-Gpz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="swD-ne-z7F">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="UU5-Qi-ncV">
+        <scene sceneID="Hhd-Fd-zku">
             <objects>
-                <viewController id="EIe-ai-Gpz" customClass="CPViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tTt-9D-9Pp">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                <viewController id="swD-ne-z7F" customClass="CLPViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cu5-xn-OtU"/>
+                        <viewControllerLayoutGuide type="bottom" id="CB6-KK-0g9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9lG-Lu-CrJ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yhh-Zn-DRv">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="x6e-hR-G5C">
+                                <rect key="frame" x="0.0" y="3" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewLayout key="collectionViewLayout" id="1i9-MX-1m6" customClass="CPCollectionViewCustomLayout"/>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewReusableCellIdentifier" id="vp7-Ex-mgp" customClass="CPCameraViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" rowHeight="200" id="VyI-AP-Oxd" customClass="CLPCameraViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="768" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VyI-AP-Oxd" id="ZTL-34-3C1">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNR-MD-MFe">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5P-Ih-anW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-3m-RXx">
+                                                    <rect key="frame" x="208" y="20" width="267" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="pNR-MD-MFe" firstAttribute="bottom" secondItem="vp7-Ex-mgp" secondAttribute="bottom" type="default" id="3c9-B3-Hbi"/>
-                                            <constraint firstItem="pNR-MD-MFe" firstAttribute="trailing" secondItem="vp7-Ex-mgp" secondAttribute="trailing" type="default" id="Ccv-BI-sYr"/>
-                                            <constraint firstItem="pNR-MD-MFe" firstAttribute="leading" secondItem="vp7-Ex-mgp" secondAttribute="leading" type="default" id="QEg-M5-IcZ"/>
-                                            <constraint firstItem="pNR-MD-MFe" firstAttribute="top" secondItem="vp7-Ex-mgp" secondAttribute="top" type="default" id="rny-Bn-tZH"/>
-                                        </constraints>
-                                        <size key="customSize" width="100" height="100"/>
+                                        </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="textLabel" destination="pNR-MD-MFe" id="7jG-wQ-Q2t"/>
+                                            <outlet property="cameraName" destination="VbT-3m-RXx" id="zWC-71-Zmf"/>
+                                            <outlet property="cameraThumbnailImageView" destination="i5P-Ih-anW" id="TIR-Ee-SbG"/>
                                         </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="EIe-ai-Gpz" id="Yrl-mx-iHK"/>
-                                    <outlet property="delegate" destination="EIe-ai-Gpz" id="7u7-cs-C9C"/>
+                                    <outlet property="dataSource" destination="swD-ne-z7F" id="cn6-8r-HGa"/>
+                                    <outlet property="delegate" destination="swD-ne-z7F" id="1h4-u8-PSP"/>
                                 </connections>
-                            </collectionView>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Yhh-Zn-DRv" firstAttribute="leading" secondItem="tTt-9D-9Pp" secondAttribute="leading" type="default" id="3HQ-hZ-kEy"/>
-                            <constraint firstItem="Yhh-Zn-DRv" firstAttribute="bottom" secondItem="tTt-9D-9Pp" secondAttribute="bottom" type="default" id="HmX-Nx-Nri"/>
-                            <constraint firstItem="Yhh-Zn-DRv" firstAttribute="trailing" secondItem="tTt-9D-9Pp" secondAttribute="trailing" type="default" id="OjP-Ao-qJF"/>
-                            <constraint firstItem="Yhh-Zn-DRv" firstAttribute="top" secondItem="tTt-9D-9Pp" secondAttribute="top" type="default" id="na5-if-dag"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="Yhh-Zn-DRv" id="K0c-x5-Pax"/>
-                        <outlet property="customLayout" destination="1i9-MX-1m6" id="Oh0-Gi-20l"/>
+                        <outlet property="tableView" destination="x6e-hR-G5C" id="mSU-Lt-8Wx"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bJ7-JU-67R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9wt-a7-KuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-133" y="-134"/>
+            <point key="canvasLocation" x="-190" y="-430"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CPCameraViewCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPCameraViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CPCollectionViewCustomLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPCollectionViewCustomLayout.h"/>
-        </class>
-        <class className="CPViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
-                <relationship kind="outlet" name="customLayout" candidateClass="CPCollectionViewCustomLayout"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>

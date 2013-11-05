@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CPCameraViewCell : UICollectionViewCell
-
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@interface CLPCameraViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *cameraName;
+@property (weak, nonatomic) IBOutlet UIImageView *cameraThumbnailImageView;
 
 @end

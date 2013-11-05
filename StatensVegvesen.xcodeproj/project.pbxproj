@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36AB9B81BF40402D88AF42C0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8E3FCC13BE425F9478ED2D /* libPods.a */; };
 		3BCC34B5228841F89A06DCBF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8E3FCC13BE425F9478ED2D /* libPods.a */; };
+		C704238B1826C40700EBFC3E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C704238A1826C40700EBFC3E /* CoreLocation.framework */; };
+		C718A8C4181E664F00C11A0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F316CA9A17000E96D4 /* Foundation.framework */; };
+		C718A8C5181E664F00C11A0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F116CA9A17000E96D4 /* UIKit.framework */; };
+		C718A8CB181E664F00C11A0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C718A8C9181E664F00C11A0D /* InfoPlist.strings */; };
+		C718A8CD181E664F00C11A0D /* StatensVegvesen_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C718A8CC181E664F00C11A0D /* StatensVegvesen_Tests.m */; };
+		C718A8D5181E666F00C11A0D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C718A8D4181E666F00C11A0D /* XCTest.framework */; };
+		C718A8D9181E6CDE00C11A0D /* CLPWebCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C718A8D8181E6CDE00C11A0D /* CLPWebCamera.m */; };
+		C718A8DC181E70A500C11A0D /* CLPWebCameraXML.m in Sources */ = {isa = PBXBuildFile; fileRef = C718A8DB181E70A500C11A0D /* CLPWebCameraXML.m */; };
+		C718A8DF181E72C200C11A0D /* CLPWebCameras.m in Sources */ = {isa = PBXBuildFile; fileRef = C718A8DE181E72C200C11A0D /* CLPWebCameras.m */; };
+		C718A8E2181E72F200C11A0D /* CLPWebCamerasXML.m in Sources */ = {isa = PBXBuildFile; fileRef = C718A8E1181E72F200C11A0D /* CLPWebCamerasXML.m */; };
 		C722D5F216CA9A17000E96D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F116CA9A17000E96D4 /* UIKit.framework */; };
 		C722D5F416CA9A17000E96D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F316CA9A17000E96D4 /* Foundation.framework */; };
 		C722D5F616CA9A17000E96D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F516CA9A17000E96D4 /* CoreGraphics.framework */; };
@@ -18,19 +29,13 @@
 		C722D60616CA9A17000E96D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C722D60516CA9A17000E96D4 /* Default@2x.png */; };
 		C722D60816CA9A17000E96D4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C722D60716CA9A17000E96D4 /* Default-568h@2x.png */; };
 		C722D60B16CA9A17000E96D4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C722D60916CA9A17000E96D4 /* MainStoryboard.storyboard */; };
-		C722D60E16CA9A17000E96D4 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D60D16CA9A17000E96D4 /* CPViewController.m */; };
-		C722D61616CA9A17000E96D4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D61516CA9A17000E96D4 /* SenTestingKit.framework */; };
-		C722D61716CA9A17000E96D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F116CA9A17000E96D4 /* UIKit.framework */; };
-		C722D61816CA9A17000E96D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C722D5F316CA9A17000E96D4 /* Foundation.framework */; };
-		C722D62016CA9A17000E96D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C722D61E16CA9A17000E96D4 /* InfoPlist.strings */; };
-		C722D62316CA9A17000E96D4 /* StatensVegvesenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D62216CA9A17000E96D4 /* StatensVegvesenTests.m */; };
-		C722D62E16CA9AFF000E96D4 /* CPCameraService.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D62D16CA9AFF000E96D4 /* CPCameraService.m */; };
-		C75D7F0F17D32B3800BB3E22 /* CPCameraViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D7F0E17D32B3800BB3E22 /* CPCameraViewCell.m */; };
-		C75D7F1217D36D3900BB3E22 /* CPCollectionViewCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D7F1117D36D3900BB3E22 /* CPCollectionViewCustomLayout.m */; };
+		C722D60E16CA9A17000E96D4 /* CLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D60D16CA9A17000E96D4 /* CLPViewController.m */; };
+		C722D62E16CA9AFF000E96D4 /* CLPCameraService.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D62D16CA9AFF000E96D4 /* CLPCameraService.m */; };
+		C75D7F0F17D32B3800BB3E22 /* CLPCameraViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D7F0E17D32B3800BB3E22 /* CLPCameraViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C722D61916CA9A17000E96D4 /* PBXContainerItemProxy */ = {
+		C718A8CF181E664F00C11A0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C722D5E616CA9A17000E96D4 /* Project object */;
 			proxyType = 1;
@@ -41,6 +46,21 @@
 
 /* Begin PBXFileReference section */
 		389F2CDBE0D74194BF3A94B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		C704238A1826C40700EBFC3E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C718A8C1181E664F00C11A0D /* StatensVegvesen Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StatensVegvesen Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C718A8C8181E664F00C11A0D /* StatensVegvesen Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StatensVegvesen Tests-Info.plist"; sourceTree = "<group>"; };
+		C718A8CA181E664F00C11A0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C718A8CC181E664F00C11A0D /* StatensVegvesen_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatensVegvesen_Tests.m; sourceTree = "<group>"; };
+		C718A8CE181E664F00C11A0D /* StatensVegvesen Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StatensVegvesen Tests-Prefix.pch"; sourceTree = "<group>"; };
+		C718A8D4181E666F00C11A0D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C718A8D7181E6CDE00C11A0D /* CLPWebCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPWebCamera.h; sourceTree = "<group>"; };
+		C718A8D8181E6CDE00C11A0D /* CLPWebCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPWebCamera.m; sourceTree = "<group>"; };
+		C718A8DA181E70A500C11A0D /* CLPWebCameraXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPWebCameraXML.h; sourceTree = "<group>"; };
+		C718A8DB181E70A500C11A0D /* CLPWebCameraXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPWebCameraXML.m; sourceTree = "<group>"; };
+		C718A8DD181E72C200C11A0D /* CLPWebCameras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPWebCameras.h; sourceTree = "<group>"; };
+		C718A8DE181E72C200C11A0D /* CLPWebCameras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPWebCameras.m; sourceTree = "<group>"; };
+		C718A8E0181E72F200C11A0D /* CLPWebCamerasXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPWebCamerasXML.h; sourceTree = "<group>"; };
+		C718A8E1181E72F200C11A0D /* CLPWebCamerasXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPWebCamerasXML.m; sourceTree = "<group>"; };
 		C722D5EE16CA9A17000E96D4 /* StatensVegvesen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatensVegvesen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C722D5F116CA9A17000E96D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C722D5F316CA9A17000E96D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,28 +75,33 @@
 		C722D60516CA9A17000E96D4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C722D60716CA9A17000E96D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C722D60A16CA9A17000E96D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C722D60C16CA9A17000E96D4 /* CPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPViewController.h; sourceTree = "<group>"; };
-		C722D60D16CA9A17000E96D4 /* CPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
-		C722D61416CA9A17000E96D4 /* StatensVegvesenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatensVegvesenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C722D60C16CA9A17000E96D4 /* CLPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPViewController.h; sourceTree = "<group>"; };
+		C722D60D16CA9A17000E96D4 /* CLPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPViewController.m; sourceTree = "<group>"; };
 		C722D61516CA9A17000E96D4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C722D61D16CA9A17000E96D4 /* StatensVegvesenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StatensVegvesenTests-Info.plist"; sourceTree = "<group>"; };
-		C722D61F16CA9A17000E96D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C722D62116CA9A17000E96D4 /* StatensVegvesenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatensVegvesenTests.h; sourceTree = "<group>"; };
-		C722D62216CA9A17000E96D4 /* StatensVegvesenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatensVegvesenTests.m; sourceTree = "<group>"; };
-		C722D62C16CA9AFF000E96D4 /* CPCameraService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCameraService.h; sourceTree = "<group>"; };
-		C722D62D16CA9AFF000E96D4 /* CPCameraService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCameraService.m; sourceTree = "<group>"; };
-		C75D7F0D17D32B3800BB3E22 /* CPCameraViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCameraViewCell.h; sourceTree = "<group>"; };
-		C75D7F0E17D32B3800BB3E22 /* CPCameraViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCameraViewCell.m; sourceTree = "<group>"; };
-		C75D7F1017D36D3900BB3E22 /* CPCollectionViewCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCollectionViewCustomLayout.h; sourceTree = "<group>"; };
-		C75D7F1117D36D3900BB3E22 /* CPCollectionViewCustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCollectionViewCustomLayout.m; sourceTree = "<group>"; };
+		C722D62C16CA9AFF000E96D4 /* CLPCameraService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPCameraService.h; sourceTree = "<group>"; };
+		C722D62D16CA9AFF000E96D4 /* CLPCameraService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPCameraService.m; sourceTree = "<group>"; };
+		C75D7F0D17D32B3800BB3E22 /* CLPCameraViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPCameraViewCell.h; sourceTree = "<group>"; };
+		C75D7F0E17D32B3800BB3E22 /* CLPCameraViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPCameraViewCell.m; sourceTree = "<group>"; };
 		CE8E3FCC13BE425F9478ED2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C718A8BE181E664F00C11A0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C718A8D5181E666F00C11A0D /* XCTest.framework in Frameworks */,
+				C718A8C5181E664F00C11A0D /* UIKit.framework in Frameworks */,
+				C718A8C4181E664F00C11A0D /* Foundation.framework in Frameworks */,
+				36AB9B81BF40402D88AF42C0 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C722D5EB16CA9A17000E96D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C704238B1826C40700EBFC3E /* CoreLocation.framework in Frameworks */,
 				C722D5F216CA9A17000E96D4 /* UIKit.framework in Frameworks */,
 				C722D5F416CA9A17000E96D4 /* Foundation.framework in Frameworks */,
 				C722D5F616CA9A17000E96D4 /* CoreGraphics.framework in Frameworks */,
@@ -84,24 +109,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C722D61016CA9A17000E96D4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C722D61616CA9A17000E96D4 /* SenTestingKit.framework in Frameworks */,
-				C722D61716CA9A17000E96D4 /* UIKit.framework in Frameworks */,
-				C722D61816CA9A17000E96D4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C718A8C6181E664F00C11A0D /* StatensVegvesen Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C718A8CC181E664F00C11A0D /* StatensVegvesen_Tests.m */,
+				C718A8C7181E664F00C11A0D /* Supporting Files */,
+			);
+			path = "StatensVegvesen Tests";
+			sourceTree = "<group>";
+		};
+		C718A8C7181E664F00C11A0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C718A8C8181E664F00C11A0D /* StatensVegvesen Tests-Info.plist */,
+				C718A8C9181E664F00C11A0D /* InfoPlist.strings */,
+				C718A8CE181E664F00C11A0D /* StatensVegvesen Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C718A8D6181E6CC400C11A0D /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C718A8D7181E6CDE00C11A0D /* CLPWebCamera.h */,
+				C718A8D8181E6CDE00C11A0D /* CLPWebCamera.m */,
+				C718A8DA181E70A500C11A0D /* CLPWebCameraXML.h */,
+				C718A8DB181E70A500C11A0D /* CLPWebCameraXML.m */,
+				C718A8DD181E72C200C11A0D /* CLPWebCameras.h */,
+				C718A8DE181E72C200C11A0D /* CLPWebCameras.m */,
+				C718A8E0181E72F200C11A0D /* CLPWebCamerasXML.h */,
+				C718A8E1181E72F200C11A0D /* CLPWebCamerasXML.m */,
+			);
+			path = "Model Objects";
+			sourceTree = "<group>";
+		};
 		C722D5E516CA9A17000E96D4 = {
 			isa = PBXGroup;
 			children = (
 				C722D5F716CA9A17000E96D4 /* StatensVegvesen */,
-				C722D61B16CA9A17000E96D4 /* StatensVegvesenTests */,
+				C718A8C6181E664F00C11A0D /* StatensVegvesen Tests */,
 				C722D5F016CA9A17000E96D4 /* Frameworks */,
 				C722D5EF16CA9A17000E96D4 /* Products */,
 				389F2CDBE0D74194BF3A94B3 /* Pods.xcconfig */,
@@ -112,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C722D5EE16CA9A17000E96D4 /* StatensVegvesen.app */,
-				C722D61416CA9A17000E96D4 /* StatensVegvesenTests.octest */,
+				C718A8C1181E664F00C11A0D /* StatensVegvesen Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +169,8 @@
 		C722D5F016CA9A17000E96D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C704238A1826C40700EBFC3E /* CoreLocation.framework */,
+				C718A8D4181E666F00C11A0D /* XCTest.framework */,
 				C722D5F116CA9A17000E96D4 /* UIKit.framework */,
 				C722D5F316CA9A17000E96D4 /* Foundation.framework */,
 				C722D5F516CA9A17000E96D4 /* CoreGraphics.framework */,
@@ -132,17 +183,16 @@
 		C722D5F716CA9A17000E96D4 /* StatensVegvesen */ = {
 			isa = PBXGroup;
 			children = (
+				C718A8D6181E6CC400C11A0D /* Model Objects */,
 				C722D60016CA9A17000E96D4 /* CPAppDelegate.h */,
 				C722D60116CA9A17000E96D4 /* CPAppDelegate.m */,
 				C722D60916CA9A17000E96D4 /* MainStoryboard.storyboard */,
-				C722D60C16CA9A17000E96D4 /* CPViewController.h */,
-				C722D60D16CA9A17000E96D4 /* CPViewController.m */,
-				C75D7F1017D36D3900BB3E22 /* CPCollectionViewCustomLayout.h */,
-				C75D7F1117D36D3900BB3E22 /* CPCollectionViewCustomLayout.m */,
-				C75D7F0D17D32B3800BB3E22 /* CPCameraViewCell.h */,
-				C75D7F0E17D32B3800BB3E22 /* CPCameraViewCell.m */,
-				C722D62C16CA9AFF000E96D4 /* CPCameraService.h */,
-				C722D62D16CA9AFF000E96D4 /* CPCameraService.m */,
+				C722D60C16CA9A17000E96D4 /* CLPViewController.h */,
+				C722D60D16CA9A17000E96D4 /* CLPViewController.m */,
+				C75D7F0D17D32B3800BB3E22 /* CLPCameraViewCell.h */,
+				C75D7F0E17D32B3800BB3E22 /* CLPCameraViewCell.m */,
+				C722D62C16CA9AFF000E96D4 /* CLPCameraService.h */,
+				C722D62D16CA9AFF000E96D4 /* CLPCameraService.m */,
 				C722D5F816CA9A17000E96D4 /* Supporting Files */,
 			);
 			path = StatensVegvesen;
@@ -162,28 +212,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C722D61B16CA9A17000E96D4 /* StatensVegvesenTests */ = {
-			isa = PBXGroup;
-			children = (
-				C722D62116CA9A17000E96D4 /* StatensVegvesenTests.h */,
-				C722D62216CA9A17000E96D4 /* StatensVegvesenTests.m */,
-				C722D61C16CA9A17000E96D4 /* Supporting Files */,
-			);
-			path = StatensVegvesenTests;
-			sourceTree = "<group>";
-		};
-		C722D61C16CA9A17000E96D4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C722D61D16CA9A17000E96D4 /* StatensVegvesenTests-Info.plist */,
-				C722D61E16CA9A17000E96D4 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C718A8C0181E664F00C11A0D /* StatensVegvesen Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C718A8D1181E664F00C11A0D /* Build configuration list for PBXNativeTarget "StatensVegvesen Tests" */;
+			buildPhases = (
+				72E603D0FEBF416982937AB0 /* Check Pods Manifest.lock */,
+				C718A8BD181E664F00C11A0D /* Sources */,
+				C718A8BE181E664F00C11A0D /* Frameworks */,
+				C718A8BF181E664F00C11A0D /* Resources */,
+				9A741871DA474D79B5152343 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C718A8D0181E664F00C11A0D /* PBXTargetDependency */,
+			);
+			name = "StatensVegvesen Tests";
+			productName = "StatensVegvesen Tests";
+			productReference = C718A8C1181E664F00C11A0D /* StatensVegvesen Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C722D5ED16CA9A17000E96D4 /* StatensVegvesen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C722D62616CA9A17000E96D4 /* Build configuration list for PBXNativeTarget "StatensVegvesen" */;
@@ -203,34 +254,20 @@
 			productReference = C722D5EE16CA9A17000E96D4 /* StatensVegvesen.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C722D61316CA9A17000E96D4 /* StatensVegvesenTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C722D62916CA9A17000E96D4 /* Build configuration list for PBXNativeTarget "StatensVegvesenTests" */;
-			buildPhases = (
-				C722D60F16CA9A17000E96D4 /* Sources */,
-				C722D61016CA9A17000E96D4 /* Frameworks */,
-				C722D61116CA9A17000E96D4 /* Resources */,
-				C722D61216CA9A17000E96D4 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C722D61A16CA9A17000E96D4 /* PBXTargetDependency */,
-			);
-			name = StatensVegvesenTests;
-			productName = StatensVegvesenTests;
-			productReference = C722D61416CA9A17000E96D4 /* StatensVegvesenTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C722D5E616CA9A17000E96D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = CP;
-				LastUpgradeCheck = 0460;
+				CLASSPREFIX = CLP;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Bird and Bear Studios";
+				TargetAttributes = {
+					C718A8C0181E664F00C11A0D = {
+						TestTargetID = C722D5ED16CA9A17000E96D4;
+					};
+				};
 			};
 			buildConfigurationList = C722D5E916CA9A17000E96D4 /* Build configuration list for PBXProject "StatensVegvesen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -245,12 +282,20 @@
 			projectRoot = "";
 			targets = (
 				C722D5ED16CA9A17000E96D4 /* StatensVegvesen */,
-				C722D61316CA9A17000E96D4 /* StatensVegvesenTests */,
+				C718A8C0181E664F00C11A0D /* StatensVegvesen Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C718A8BF181E664F00C11A0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C718A8CB181E664F00C11A0D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C722D5EC16CA9A17000E96D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,14 +305,6 @@
 				C722D60616CA9A17000E96D4 /* Default@2x.png in Resources */,
 				C722D60816CA9A17000E96D4 /* Default-568h@2x.png in Resources */,
 				C722D60B16CA9A17000E96D4 /* MainStoryboard.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C722D61116CA9A17000E96D4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C722D62016CA9A17000E96D4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +326,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		72E603D0FEBF416982937AB0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A741871DA474D79B5152343 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9F96D905E4144031B8E743A4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,54 +371,52 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C722D61216CA9A17000E96D4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C718A8BD181E664F00C11A0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C718A8CD181E664F00C11A0D /* StatensVegvesen_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C722D5EA16CA9A17000E96D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C718A8D9181E6CDE00C11A0D /* CLPWebCamera.m in Sources */,
 				C722D5FE16CA9A17000E96D4 /* main.m in Sources */,
 				C722D60216CA9A17000E96D4 /* CPAppDelegate.m in Sources */,
-				C722D60E16CA9A17000E96D4 /* CPViewController.m in Sources */,
-				C722D62E16CA9AFF000E96D4 /* CPCameraService.m in Sources */,
-				C75D7F0F17D32B3800BB3E22 /* CPCameraViewCell.m in Sources */,
-				C75D7F1217D36D3900BB3E22 /* CPCollectionViewCustomLayout.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C722D60F16CA9A17000E96D4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C722D62316CA9A17000E96D4 /* StatensVegvesenTests.m in Sources */,
+				C718A8DC181E70A500C11A0D /* CLPWebCameraXML.m in Sources */,
+				C718A8DF181E72C200C11A0D /* CLPWebCameras.m in Sources */,
+				C722D60E16CA9A17000E96D4 /* CLPViewController.m in Sources */,
+				C722D62E16CA9AFF000E96D4 /* CLPCameraService.m in Sources */,
+				C718A8E2181E72F200C11A0D /* CLPWebCamerasXML.m in Sources */,
+				C75D7F0F17D32B3800BB3E22 /* CLPCameraViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C722D61A16CA9A17000E96D4 /* PBXTargetDependency */ = {
+		C718A8D0181E664F00C11A0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C722D5ED16CA9A17000E96D4 /* StatensVegvesen */;
-			targetProxy = C722D61916CA9A17000E96D4 /* PBXContainerItemProxy */;
+			targetProxy = C718A8CF181E664F00C11A0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C718A8C9181E664F00C11A0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C718A8CA181E664F00C11A0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C722D5FA16CA9A17000E96D4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -368,29 +433,83 @@
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
-		C722D61E16CA9A17000E96D4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C722D61F16CA9A17000E96D4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C718A8D2181E664F00C11A0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389F2CDBE0D74194BF3A94B3 /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StatensVegvesen.app/StatensVegvesen";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StatensVegvesen Tests/StatensVegvesen Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "StatensVegvesen Tests/StatensVegvesen Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C718A8D3181E664F00C11A0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389F2CDBE0D74194BF3A94B3 /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StatensVegvesen.app/StatensVegvesen";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StatensVegvesen Tests/StatensVegvesen Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "StatensVegvesen Tests/StatensVegvesen Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		C722D62416CA9A17000E96D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -411,14 +530,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -436,9 +553,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StatensVegvesen/StatensVegvesen-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "StatensVegvesen/StatensVegvesen-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -452,51 +567,24 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StatensVegvesen/StatensVegvesen-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "StatensVegvesen/StatensVegvesen-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		C722D62A16CA9A17000E96D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StatensVegvesen.app/StatensVegvesen";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StatensVegvesen/StatensVegvesen-Prefix.pch";
-				INFOPLIST_FILE = "StatensVegvesenTests/StatensVegvesenTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		C722D62B16CA9A17000E96D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StatensVegvesen.app/StatensVegvesen";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StatensVegvesen/StatensVegvesen-Prefix.pch";
-				INFOPLIST_FILE = "StatensVegvesenTests/StatensVegvesenTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C718A8D1181E664F00C11A0D /* Build configuration list for PBXNativeTarget "StatensVegvesen Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C718A8D2181E664F00C11A0D /* Debug */,
+				C718A8D3181E664F00C11A0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C722D5E916CA9A17000E96D4 /* Build configuration list for PBXProject "StatensVegvesen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -511,15 +599,6 @@
 			buildConfigurations = (
 				C722D62716CA9A17000E96D4 /* Debug */,
 				C722D62816CA9A17000E96D4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C722D62916CA9A17000E96D4 /* Build configuration list for PBXNativeTarget "StatensVegvesenTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C722D62A16CA9A17000E96D4 /* Debug */,
-				C722D62B16CA9A17000E96D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

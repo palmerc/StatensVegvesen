@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Bird and Bear Studios. All rights reserved.
 //
 
-#import "CPCameraViewCell.h"
+#import "CLPCameraViewCell.h"
 
-@implementation CPCameraViewCell
+@implementation CLPCameraViewCell
 
 
 @end

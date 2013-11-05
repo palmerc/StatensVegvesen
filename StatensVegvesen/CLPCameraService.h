@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CPCameraService : NSObject <NSURLConnectionDelegate, NSURLConnectionDownloadDelegate> {
+@interface CLPCameraService : NSObject <NSURLConnectionDelegate, NSURLConnectionDownloadDelegate> {
     NSData *_xmlData;
 }
 

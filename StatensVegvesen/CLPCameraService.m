@@ -6,17 +6,17 @@
 //  Copyright (c) 2013 Bird and Bear Studios. All rights reserved.
 //
 
-#import "CPCameraService.h"
+#import "CLPCameraService.h"
 
 
 
 static NSString *const kXMLMetadata = @"http://webkamera.vegvesen.no/metadata.xml";
 
-@interface CPCameraService ()
+@interface CLPCameraService ()
 - (void)downloadCameraData;
 @end
 
-@implementation CPCameraService
+@implementation CLPCameraService
 
 - (id)init {
     self = [super init];
