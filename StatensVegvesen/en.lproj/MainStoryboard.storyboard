@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="swD-ne-z7F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="EmZ-zz-eYJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cameras View Controller-->
         <scene sceneID="Hhd-Fd-zku">
             <objects>
-                <viewController id="swD-ne-z7F" customClass="CLPViewController" sceneMemberID="viewController">
+                <viewController id="swD-ne-z7F" customClass="CLPCamerasViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cu5-xn-OtU"/>
                         <viewControllerLayoutGuide type="bottom" id="CB6-KK-0g9"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" rowHeight="200" id="VyI-AP-Oxd" customClass="CLPCameraViewCell">
-                                        <rect key="frame" x="0.0" y="22" width="768" height="200"/>
+                                        <rect key="frame" x="0.0" y="86" width="768" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VyI-AP-Oxd" id="ZTL-34-3C1">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="199"/>
@@ -55,13 +55,61 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FiM-BY-R09"/>
                     <connections>
                         <outlet property="tableView" destination="x6e-hR-G5C" id="mSU-Lt-8Wx"/>
+                        <segue destination="EMO-c4-rbQ" kind="push" identifier="FullScreenSegue" id="sUl-Ir-z0z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wt-a7-KuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190" y="-430"/>
+            <point key="canvasLocation" x="88" y="-630"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="0zQ-gf-ruN">
+            <objects>
+                <viewController id="EMO-c4-rbQ" customClass="CLPCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lRc-gc-ZhX"/>
+                        <viewControllerLayoutGuide type="bottom" id="GeL-ge-ZhO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H0x-AO-Ida">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhc-s0-OdK">
+                                <rect key="frame" x="-3" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C5D-rJ-nyf"/>
+                    <connections>
+                        <outlet property="imageView" destination="Dhc-s0-OdK" id="gM9-ur-BCY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mr5-hs-bHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209" y="-630"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zZe-6A-ink">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EmZ-zz-eYJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BAm-qy-IwA">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="swD-ne-z7F" kind="relationship" relationship="rootViewController" id="ffZ-Cp-msJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7F-6z-nnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-886" y="-630"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

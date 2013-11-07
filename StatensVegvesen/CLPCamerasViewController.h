@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CLPCameraService.h"
 
 
 
-@interface CLPViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-
-@property (strong, nonatomic) NSArray *webCameras;
+@interface CLPCamerasViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, CLPCameraServiceDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

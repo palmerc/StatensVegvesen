@@ -27,6 +27,8 @@ NSString *const kInformationKey = @"info";
 @property (weak, nonatomic) id <NSXMLParserDelegate> parent;
 @property (strong, nonatomic) NSMutableString * textStorage;
 @property (strong, nonatomic) NSDictionary *XMLToSelectorMap;
+@property (strong, nonatomic, readwrite) NSURL *URL;
+@property (strong, nonatomic, readwrite) NSURL *thumbnailURL;
 @property (assign, nonatomic) CLLocationDegrees longitude;
 @property (assign, nonatomic) CLLocationDegrees latitude;
 
@@ -55,12 +57,11 @@ NSString *const kInformationKey = @"info";
     _XMLToSelectorMap = @{
                            kURLKey : [NSValue valueWithPointer:@selector(setURLFromString:)],
                            kThumbnailURLKey : [NSValue valueWithPointer:@selector(setThumbnailURLFromString:)],
-                           kThumbnailSizeKey : [NSValue valueWithPointer:@selector(setThumnailSizeFromString:)],
                            kPlaceNameKey : [NSValue valueWithPointer:@selector(setPlaceName:)],
                            kRoadNameKey : [NSValue valueWithPointer:@selector(setRoadName:)],
                            kRegionKey : [NSValue valueWithPointer:@selector(setRegion:)],
-                           kLongitudeKey : [NSValue valueWithPointer:@selector(setLongitude:)],
-                           kLatitudeKey : [NSValue valueWithPointer:@selector(setLatitude:)],
+                           kLongitudeKey : [NSValue valueWithPointer:@selector(setLongitudeFromString:)],
+                           kLatitudeKey : [NSValue valueWithPointer:@selector(setLatitudeFromString:)],
                            kWeatherKey : [NSValue valueWithPointer:@selector(setWeatherURLFromString:)],
                            kInformationKey : [NSValue valueWithPointer:@selector(setInformation:)]
                            };
@@ -124,9 +125,14 @@ NSString *const kInformationKey = @"info";
     self.weatherURL = URL;
 }
 
-- (void)setThumnailSizeFromString:(NSString *)string
+- (void)setLongitudeFromString:(NSString *)string
 {
-    self.thumbnailSize = [string floatValue];
+    self.longitude = [string doubleValue];
+}
+
+- (void)setLatitudeFromString:(NSString *)string
+{
+    self.latitude = [string doubleValue];
 }
 
 - (CLLocationCoordinate2D)location

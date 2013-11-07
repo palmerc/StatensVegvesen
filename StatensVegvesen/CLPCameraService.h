@@ -8,8 +8,27 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CLPCameraService : NSObject <NSURLConnectionDelegate, NSURLConnectionDownloadDelegate> {
-    NSData *_xmlData;
-}
+@class CLPWebCamera;
+@protocol CLPCameraServiceDelegate;
 
+
+
+@interface CLPCameraService : NSObject
+
+@property (strong, nonatomic, readonly) NSArray *cameras;
+
++ (instancetype)sharedService;
+
+- (void)addObserver:(id<CLPCameraServiceDelegate>)observer;
+- (void)addObserver:(id<CLPCameraServiceDelegate>)observer forCamera:(CLPWebCamera *)camera;
+- (void)removeObserver:(id<CLPCameraServiceDelegate>)observer;
+- (void)removeObserver:(id<CLPCameraServiceDelegate>)observer forCamera:(CLPWebCamera *)camera;
+
+@end
+
+
+
+@protocol CLPCameraServiceDelegate <NSObject>
+@optional
+- (void)didUpdateCamera:(CLPWebCamera *)camera;
 @end

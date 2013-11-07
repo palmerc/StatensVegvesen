@@ -12,4 +12,25 @@
 
 @implementation CLPWebCamera
 
+- (BOOL)isEqualToCamera:(CLPWebCamera *)camera
+{
+    return [self isEqual:camera];
+}
+
+- (BOOL)isEqual:(id)object
+{
+    BOOL result = NO;
+    if ([object isKindOfClass:[CLPWebCamera class]]) {
+        CLPWebCamera *otherCamera = object;
+        result = [self.identifier isEqualToString:otherCamera.identifier];
+    }
+    
+    return result;
+}
+
+- (NSUInteger)hash
+{
+    return [self.identifier hash];
+}
+
 @end

@@ -24,6 +24,9 @@ extern NSString *const kInformationKey;
 
 @interface CLPWebCameraXML : CLPWebCamera <NSXMLParserDelegate>
 
+@property (strong, nonatomic, readonly) NSURL *URL;
+@property (strong, nonatomic, readonly) NSURL *thumbnailURL;
+
 - (id)initWithName:(NSString *)elementName attributes:(NSDictionary *)attributes parent:(id)parent children:(NSArray *)children parser:(NSXMLParser *)parser;
 
 @end

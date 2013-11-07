@@ -29,9 +29,10 @@
 		C722D60616CA9A17000E96D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C722D60516CA9A17000E96D4 /* Default@2x.png */; };
 		C722D60816CA9A17000E96D4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C722D60716CA9A17000E96D4 /* Default-568h@2x.png */; };
 		C722D60B16CA9A17000E96D4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C722D60916CA9A17000E96D4 /* MainStoryboard.storyboard */; };
-		C722D60E16CA9A17000E96D4 /* CLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D60D16CA9A17000E96D4 /* CLPViewController.m */; };
+		C722D60E16CA9A17000E96D4 /* CLPCamerasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D60D16CA9A17000E96D4 /* CLPCamerasViewController.m */; };
 		C722D62E16CA9AFF000E96D4 /* CLPCameraService.m in Sources */ = {isa = PBXBuildFile; fileRef = C722D62D16CA9AFF000E96D4 /* CLPCameraService.m */; };
 		C75D7F0F17D32B3800BB3E22 /* CLPCameraViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D7F0E17D32B3800BB3E22 /* CLPCameraViewCell.m */; };
+		C7AA5CDA182C443200CF65DC /* CLPCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AA5CD9182C443200CF65DC /* CLPCameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,13 +76,15 @@
 		C722D60516CA9A17000E96D4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C722D60716CA9A17000E96D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C722D60A16CA9A17000E96D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C722D60C16CA9A17000E96D4 /* CLPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPViewController.h; sourceTree = "<group>"; };
-		C722D60D16CA9A17000E96D4 /* CLPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPViewController.m; sourceTree = "<group>"; };
+		C722D60C16CA9A17000E96D4 /* CLPCamerasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPCamerasViewController.h; sourceTree = "<group>"; };
+		C722D60D16CA9A17000E96D4 /* CLPCamerasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPCamerasViewController.m; sourceTree = "<group>"; };
 		C722D61516CA9A17000E96D4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C722D62C16CA9AFF000E96D4 /* CLPCameraService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPCameraService.h; sourceTree = "<group>"; };
 		C722D62D16CA9AFF000E96D4 /* CLPCameraService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPCameraService.m; sourceTree = "<group>"; };
 		C75D7F0D17D32B3800BB3E22 /* CLPCameraViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPCameraViewCell.h; sourceTree = "<group>"; };
 		C75D7F0E17D32B3800BB3E22 /* CLPCameraViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPCameraViewCell.m; sourceTree = "<group>"; };
+		C7AA5CD8182C443200CF65DC /* CLPCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPCameraViewController.h; sourceTree = "<group>"; };
+		C7AA5CD9182C443200CF65DC /* CLPCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPCameraViewController.m; sourceTree = "<group>"; };
 		CE8E3FCC13BE425F9478ED2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -187,8 +190,10 @@
 				C722D60016CA9A17000E96D4 /* CPAppDelegate.h */,
 				C722D60116CA9A17000E96D4 /* CPAppDelegate.m */,
 				C722D60916CA9A17000E96D4 /* MainStoryboard.storyboard */,
-				C722D60C16CA9A17000E96D4 /* CLPViewController.h */,
-				C722D60D16CA9A17000E96D4 /* CLPViewController.m */,
+				C7AA5CD8182C443200CF65DC /* CLPCameraViewController.h */,
+				C7AA5CD9182C443200CF65DC /* CLPCameraViewController.m */,
+				C722D60C16CA9A17000E96D4 /* CLPCamerasViewController.h */,
+				C722D60D16CA9A17000E96D4 /* CLPCamerasViewController.m */,
 				C75D7F0D17D32B3800BB3E22 /* CLPCameraViewCell.h */,
 				C75D7F0E17D32B3800BB3E22 /* CLPCameraViewCell.m */,
 				C722D62C16CA9AFF000E96D4 /* CLPCameraService.h */,
@@ -389,9 +394,10 @@
 				C718A8D9181E6CDE00C11A0D /* CLPWebCamera.m in Sources */,
 				C722D5FE16CA9A17000E96D4 /* main.m in Sources */,
 				C722D60216CA9A17000E96D4 /* CPAppDelegate.m in Sources */,
+				C7AA5CDA182C443200CF65DC /* CLPCameraViewController.m in Sources */,
 				C718A8DC181E70A500C11A0D /* CLPWebCameraXML.m in Sources */,
 				C718A8DF181E72C200C11A0D /* CLPWebCameras.m in Sources */,
-				C722D60E16CA9A17000E96D4 /* CLPViewController.m in Sources */,
+				C722D60E16CA9A17000E96D4 /* CLPCamerasViewController.m in Sources */,
 				C722D62E16CA9AFF000E96D4 /* CLPCameraService.m in Sources */,
 				C718A8E2181E72F200C11A0D /* CLPWebCamerasXML.m in Sources */,
 				C75D7F0F17D32B3800BB3E22 /* CLPCameraViewCell.m in Sources */,
